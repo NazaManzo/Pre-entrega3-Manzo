@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+
+    <h1>Manejo de Productos</h1>
+
+    <form id="productForm">
+        <label for="productName">Nombre del producto:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productPrice">Precio:</label>
+        <input type="number" id="productPrice" required>
+
+        <label for="productProvider">Proveedor:</label>
+        <input type="text" id="productProvider" required>
+
+        <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+    </form>
+
+    <button type="button" onclick="mostrarProductos()">Mostrar Productos</button>
+    <button type="button" onclick="sumarProductos()">Sumar Precios</button>
+
+    <div id="resultArea"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
